@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="tab_box">
+ <ul id="tab_nav">
+ 	<li id="li_nav1" class="hover">前端开发</li>
+    <li id="li_nav2">JS开发</li>
+    <li id="li_nav3" class="last">后端开发</li>
+ </ul>
+ <ul id="tab_content">
+ 	<li class="active" id="li_content1">这是前端开发的内容<br/>
+   Author:Cheemi<br/>
+Blog Url: <a href="http://cheemi.com" target="_blank">http://cheemi.com</a>
+    </li>
+    <li id="li_content2">
+    这是JS开发的内容这是开发的内开发的内容这是开发的内容这是开发的内容这是开发的内容这是开发的内容这是开发的内容这是开发的内容这是开发的内容这是开发的内容这是开发的内容这是容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JS开发的内容这是JSJS开发的内容这是JS开发的内容这是JS开发的内容</li>
+    <li id="li_content3">这是后端开发的内容<br>
+    	Author:Cheemi<br/>
+Blog Url: <a href="http://cheemi.com" target="_blank">http://cheemi.com</a>
+    </li>
+ </ul>
+ </div>
+ <script type="text/javascript" src="js/ctab.js"></script>
+ <script type="text/javascript">
+ var tabNavs=document.getElementById('tab_nav').getElementsByTagName('li');
+ var tabList=document.getElementById('tab_content').getElementsByTagName('li');
+ 
+ new CTab().handlerTabNav(
+ document.getElementById('tab_nav'),
+ tabNavs,
+ tabList);
+</script>
+</body>
+</html>
